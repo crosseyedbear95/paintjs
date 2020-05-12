@@ -16,6 +16,7 @@ ctx.fillRect(0, 0, 700, 700);
 ctx.strokeStyle = INITIAL_COLOR;
 ctx.fillStyle = INITIAL_COLOR;
 ctx.lineWidth = 2.5;
+canvas.style.cursor = "url(images/brush.png) 0 16, auto";
 
 let painting = false;
 let filling = false;
@@ -55,9 +56,11 @@ function handleModeClick() {
   if (filling === true) {
     filling = false;
     mode.innerText = "Fill";
+    canvas.style.cursor = "url(images/brush.png) 0 16, auto";
   } else {
     filling = true;
     mode.innerText = "Paint";
+    canvas.style.cursor = "url(images/paint.png) 0 16, auto";
   }
 }
 

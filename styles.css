@@ -16,6 +16,10 @@ body {
   height: 120%;
 }
 
+/* .canvas {
+  cursor: url(images/brush.png) 0 16, auto;
+} */
+
 .controls {
   display: flex;
   flex-direction: column;
